@@ -31,7 +31,7 @@ export default function DigitalClock() {
     let ampm = '';
 
     if (!is24Hour) {
-      ampm = hours >= 12 ? 'PM' : 'AM';
+      ampm = hours >= 12 ? 'AM' : 'PM';
       hours = hours % 12 || 12; // Convert to 12-hour format
     }
 
